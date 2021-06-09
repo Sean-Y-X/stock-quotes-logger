@@ -6,8 +6,8 @@ import { useEffect, useRef, useState } from "react";
 import PauseButton from "./PauseButton";
 import QuotesLogger from "./QuotesLogger";
 import QuotesSummary from "./QuotesSummary";
-import StockQuoteSummary from "./model/StockQuoteSummary";
-import { fetchStockQuotes } from "./api/api";
+import StockQuoteSummary from "../model/StockQuoteSummary";
+import { fetchStockQuotes } from "../api/api";
 import moment from "moment";
 
 const UPDATE_PERIOD = 2_000;
