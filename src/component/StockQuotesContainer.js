@@ -33,10 +33,12 @@ export default function StockQuotesContainer() {
     }
   }
 
+  // remember the latest fetchData
   useEffect(() => {
     ref.current = fetchData;
   }, [fetchData]);
 
+  // fetch data every UPDATE_PERIOD
   useEffect(() => {
     let interval = setInterval(() => {
       ref.current();
